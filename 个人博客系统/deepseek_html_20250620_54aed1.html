@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .content { line-height: 1.6; }
+    </style>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <a href="/">返回首页</a>
+    <div class="content">
+        {{ post.content|safe }}
+    </div>
+</body>
+</html>
